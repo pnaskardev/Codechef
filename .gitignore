@@ -57,3 +57,6 @@ HORSES/tempCodeRunnerFile.cpp
 HTMLTAGS/htmltags.cpp
 ATM/tempCodeRunnerFile.cpp
 HS08TEST/tempCodeRunnerFile.cpp
+*.bin
+MAXFUN/tempCodeRunnerFile.cpp
+NOTIME/tempCodeRunnerFile.cpp
