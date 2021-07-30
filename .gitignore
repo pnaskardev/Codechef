@@ -50,3 +50,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+*.prob
+FLOW004/tempCodeRunnerFile.cpp
+FSQRT/tempCodeRunnerFile.cpp
+HORSES/tempCodeRunnerFile.cpp
+HTMLTAGS/htmltags.cpp
