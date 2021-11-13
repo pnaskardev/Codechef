@@ -6,6 +6,7 @@ using namespace std;
 void solve();
 int32_t main(void)
 {
+    srand(time(0));
     int t=(rand()%1000);
     fstream myIN;
     myIN.open("in_2.in",ios::out);//write
@@ -45,4 +46,6 @@ int32_t main(void)
             myOUT<<"YES"<<endl; 
         }
     }
+    myIN.close();
+    myOUT.close();
 }

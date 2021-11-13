@@ -6,16 +6,17 @@ using namespace std;
 void solve();
 int32_t main(void)
 {
+    srand(time(0));
     int t=(rand()%1000);
     fstream myIN;
-    myIN.open("in_1.in",ios::out);//write
+    myIN.open("in_final.in",ios::out);//write
     myIN<<t<<endl;
     fstream myOUT;
-    myOUT.open("out_1.out",ios::out);   
+    myOUT.open("out_final.out",ios::out);   
     while(t--)
     {
-        int n=(rand()%100000);
-        double b=(rand()%100000);
+        int n=(rand()%10000);
+        double b=(rand()%10000);
         myIN<<n<<" "<<b<<endl;
         int arr[n];
         for(int i=0;i<n;i++)
@@ -45,4 +46,6 @@ int32_t main(void)
             myOUT<<"YES"<<endl; 
         }
     }
+    myIN.close();
+    myOUT.close();
 }
