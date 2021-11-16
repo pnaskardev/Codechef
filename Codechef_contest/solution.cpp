@@ -30,7 +30,7 @@ void solve()
     double ans=0;
     if(sum>1000)
     {
-        ans=sum-sum*0.01;
+        ans=(double)sum-(double)sum*0.1;
     }
     else
     {
