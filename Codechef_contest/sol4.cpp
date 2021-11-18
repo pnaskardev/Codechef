@@ -7,21 +7,21 @@ void solve();
 int32_t main(void)
 {
     srand(time(0));
-    int t=(rand()%100)+1;
+    int t=2;
     fstream myIN;
-    myIN.open("in_4.in",ios::out);//write
+    myIN.open("in_5.in",ios::out);//write
     myIN<<t<<endl;
     fstream myOUT;
-    myOUT.open("out_4.out",ios::out);   
+    myOUT.open("out_5.out",ios::out);   
     while(t--)
     {
         int n=(rand()%100)+2;
-        double b=(rand()%1000);
+        double b=(rand()%100);
         myIN<<n<<" "<<b<<endl;
         int arr[n];
         for(int i=0;i<n;i++)
         {
-            arr[i]=(rand()%10);
+            arr[i]=(rand()%100);
             myIN<<arr[i]<<" ";
         }
         myIN<<endl;
