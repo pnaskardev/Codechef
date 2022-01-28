@@ -2,47 +2,25 @@
 #include<bits/stdc++.h>
 #define int long long int
 using namespace std;
+const int minim=-1e4;
 const int maxim=1e5;
+void solve();
 int32_t main(void)
 {
-    srand(time(0));
-    fstream myIN;
-    myIN.open("in_0.in",ios::out);//write
-    fstream myOUT;
-    myOUT.open("out_0_second.out",ios::out);
-    int n;
-    cin>>n;
-    myIN<<n<<endl;
-    vector<int>a(n);
-    vector<int>o;
-    vector<int>e;
-    for(int i=0;i<n;i++)
+    // int t;
+    // cin>>t;
+    // while(t--)
+    // {
+    //     solve();
+    // }
+    solve();
+}
+void solve()
+{
+     srand(time(0));
+     for(int i=0;i<200;i++)
     {
-        cin>>a[i];
-        myIN<<a[i]<<" ";
-    }
-    myIN<<endl;
-    for(auto i:a)
-    {
-        if(i%2==0)
-        {
-            e.push_back(i);
-        }
-        else
-        {
-            o.push_back(i);
-        }
-    }
-    for(auto i:e)
-    {
-        cout<<i<<" ";
-        myOUT<<i<<" ";
-    }
-    for(auto i:o)
-    {
-        cout<<i<<" ";
-        myOUT<<i<<" ";
+        cout<<rand() % maxim + minim<<" "; 
     }
     cout<<endl;
-    myOUT<<endl;
 }

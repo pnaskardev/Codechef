@@ -9,7 +9,7 @@ int32_t main(void)
     vector<int>arr(n);
     for(int i=0;i<n;i++)
     {
-        arr[i]=(rand()%10);
+        cin>>arr[i];
     }
     // 2 #contigous block# 0 2 0
     if(arr[0]==2 && arr[arr.size()-3]==0 && arr[arr.size()-2]==2 && arr[arr.size()-1]==0)

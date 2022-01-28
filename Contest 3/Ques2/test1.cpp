@@ -13,8 +13,7 @@ int32_t main(void)
     int n=(rand()%2000)+2;
     myIN<<n<<endl;
     vector<int>a(n);
-    vector<int>o;
-    vector<int>e;
+    int e=0,o=0;
     for(int i=0;i<n;i++)
     {
         a[i]=(rand()%maxim)+1;
@@ -25,23 +24,13 @@ int32_t main(void)
     {
         if(i%2==0)
         {
-            e.push_back(i);
+            e++;
         }
         else
         {
-            o.push_back(i);
+            o++;
         }
     }
-    for(auto i:o)
-    {
-        cout<<i<<" ";
-        myOUT<<i<<" ";
-    }
-    for(auto i:e)
-    {
-        cout<<i<<" ";
-        myOUT<<i<<" ";
-    }
-    cout<<endl;
-    myOUT<<endl;
+    cout<<o<<" "<<e<<endl;
+    myOUT<<o<<" "<<e<<endl;
 }
