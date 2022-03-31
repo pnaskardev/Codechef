@@ -33,28 +33,18 @@ void solve()
         cout<<"NO"<<endl;
         return;
     }
-    vector<pair<int,char>>arr;
-    for(auto i:mp)
+    sort(s.begin(),s.end());
+    reverse(s.begin()+n/2,s.end());
+    string t=s;
+    reverse(t.begin(),t.end());
+    for(int i=0;i<t.size();i++)
     {
-        if(i.second>(n/2))
+        if(s[i]==t[i])
         {
             cout<<"NO"<<endl;
             return;
         }
-        else
-        {
-            arr.push_back({i.second,i.first});
-        }
     }
-    sort(arr.begin(),arr.end());
     cout<<"YES"<<endl;
-    for(auto i:arr)
-    {
-        while(i.first>0)
-        {
-            cout<<i.second;
-            i.first--;
-        }
-    }
-    cout<<endl;
+    cout<<s<<endl;
 }
